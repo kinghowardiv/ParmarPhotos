@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Howard Peters</title>
+  <link rel="icon" type="image/ico" href="icon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"  type="text/css" href="ParmarPhotosCSS.css" />
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid nav-border">
+		<div class="nav navbar-nav navbar-right">
+		  <a class="navbar-brand" href="ParmarPhotos.html"><img src="Images/icon.jpg"></a>		  
+		</div>
+		<div>
+		  <ul class="nav navbar-nav">
+			<li><a href="ParmarPhotos.html">Home</a></li>
+			<li><a href="ParmarPhotosPics.html">Pictures</a></li>
+			<li><a href="ParmarPhotosVids.html">Videos</a></li>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+
+	<div class="container">
+	<div class="jumbotron" style="background-color:lightgrey">
+		<h1>   Welcome to Parmar Photos.</h1>
+		<h2>Photos by Parmar, for Parmar</h2>
+		<div class="w3-content w3-section" >
+		  <img class="mySlides w3-animate-fading" src="Images/Parmar Photos/neil1.jpg">
+		  <img class="mySlides w3-animate-fading" src="Images/Parmar Photos/neil2.jpg">
+		  <img class="mySlides w3-animate-fading" src="Images/Parmar Photos/neil3.jpg">
+		  <img class="mySlides w3-animate-fading" src="Images/Parmar Photos/neil4.jpg">
+		  <img class="mySlides w3-animate-fading" src="Images/Parmar Photos/neil6.jpg">
+		  <img class="mySlides w3-animate-fading" src="Images/Parmar Photos/neil7.jpg">
+		</div>	
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>											
+	</div>
+	</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    x[myIndex-1].style.margin = "auto";
+    setTimeout(carousel, 6000);    
+}
+</script>
+</script>	
+</body>
+</html>

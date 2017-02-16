@@ -1,0 +1,28 @@
+
+body,html{
+
+}
+
+body{ background-color: #2E4053;
+	
+} 
+div.side-div{
+	background-color: #003399;
+	border: 2px solid #a1a1a1;
+	border-radius: 25px;
+	padding: 10px 40px; 
+	float: left;
+	height: 1000px;
+	width: 10%;
+}
+a{
+	color:#000000;
+}
+img.project{
+	 width:304px;
+	 height:528px;
+}
+img.spaceImg{
+	 width:804px;
+	 height:300px;
+}

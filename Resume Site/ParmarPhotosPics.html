@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Howard Peters</title>
+  <link rel="icon" type="image/ico" href="icon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <link rel="stylesheet"  type="text/css" href="ParmarPhotosCSS.css" />
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid nav-border">
+		<div class="nav navbar-nav navbar-right">
+		  <a class="navbar-brand" href="ParmarPhotos.html"><img src="Images/icon.jpg"></a>
+		</div>
+		<div>
+		  <ul class="nav navbar-nav">
+			<li><a href="ParmarPhotos.html">Home</a></li>
+			<li><a href="ParmarPhotosPics.html">Pictures</a></li>
+			<li><a href="ParmarPhotosVids.html">Videos</a></li>
+			</li>
+		  </ul>
+		</div>
+	  </div>
+	</nav>
+
+	<div class="container">
+	<div class="jumbotron" style="background-color:lightgrey">
+		<br>
+		
+		<h1>30 Days of Neil</h1>
+		<br>
+		<br>
+		<div>
+		<img class="neilImg" src="Images/Parmar Photos/day4.jpg">
+		<img class="neilImg" src="Images/Parmar Photos/day3.jpg">
+		<img class="neilImg" src="Images/Parmar Photos/day6.jpg">
+		<img class="neilImg" src="Images/Parmar Photos/day8.jpg">
+		<img class="neilImg" src="Images/Parmar Photos/day13.jpg">
+		<img class="neilImg" src="Images/Parmar Photos/day14.jpg">
+		<img class="neilImg" src="Images/Parmar Photos/day15.jpg">
+		</div>
+						
+						
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h1>Neil World Wide<h1>
+		<br>
+		<img class="neilImg" src="Images/Parmar Photos/nww1.jpg">
+		<img class="neilImg" src="Images/Parmar Photos/nww2.jpg">
+		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<h1>Neil Hall of Fame<h1>
+		<br>
+		<img class="neilImg" src="Images/Parmar Photos/hf2.jpg">
+		<img class="neilImg" src="Images/Parmar Photos/hf3.jpg">
+		<img class="neilImg" src="Images/Parmar Photos/hf6.jpg">
+		<img class="neilImg" src="Images/Parmar Photos/hf7.png">
+		<br>
+		<br>
+		<img class="neilWideImg" src="Images/Parmar Photos/hf1.jpg">
+	</div>
+	</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    x[myIndex-1].style.margin = "auto";
+    setTimeout(carousel, 6000);    
+}
+</script>
+</script>	
+</body>
+</html>
